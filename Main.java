@@ -1,7 +1,23 @@
 import java.util.Scanner;
 
+/**
+ * Main class serves as the entry point for the application.
+ *
+ * It provides a menu for users to select between different functionalities:
+ * Calculator, Rock-Paper-Scissors game, Memory Game.
+ *
+ * The user can exit the application by selecting the quit option.
+ */
 public class Main {
 
+    /**
+     * Main method that runs the application menu loop.
+     *
+     * It repeatedly asks the user to choose an option and executes the
+     * chosen functionality until the user chooses to exit.
+     *
+     * @param args Command-line arguments (not used)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
@@ -11,6 +27,7 @@ public class Main {
             System.out.println("\nWhat would you like to use?");
             System.out.println("1. Calculator");
             System.out.println("2. Rock-Paper-Scissors game");
+            System.out.println("3. Memory Game");
             System.out.println("0. Exit");
             System.out.print("\nEnter the number of your choice: ");
 
@@ -22,6 +39,9 @@ public class Main {
                     break;
                 case "2":
                     RockPaperScissors.runGame(scanner);
+                    break;
+                case "3":
+                    MemoryGame.runMG(scanner);
                     break;
                 case "0":
                     running = false;
