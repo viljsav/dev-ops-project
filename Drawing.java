@@ -36,6 +36,10 @@ public class Drawing {
             System.out.println();
         }
     }
+    /**
+     * Method to validate width and height.
+     * @param i
+     */
     public static void validateInteger(int i) {
         if (i < 0) {
             System.err.println("Give valid width/height");
