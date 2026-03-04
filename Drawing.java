@@ -13,11 +13,11 @@ public class Drawing {
         System.out.println("Give height: ");
         int height = Integer.parseInt(scanner.nextLine());
         validateInteger(height);
-        scanner.close();
 
         System.out.println("Give character: ");
         char ch = scanner.nextLine().charAt(0);
-
+        
+        scanner.close();
         drawShape(width, height, ch);
 
     }
