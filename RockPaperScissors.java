@@ -1,6 +1,15 @@
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * RockPaperScissors is a simple game where players choose rock, paper, or scissors.
+ *
+ * The game can be played in singleplayer or in two-player mode.
+ * The computer's choice is randomly generated in single-player mode.
+ *
+ * The game continues until the player chooses to quit.
+ */
+
 public class RockPaperScissors {
 
     private static final String[] options = {"rock", "paper", "scissors"};
