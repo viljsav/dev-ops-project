@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * Main class serves as the entry point for the application.
+ *
+ * It provides a menu for users to select between difrfent functionalities:
+ * Calculator, Rock-Paper-Scissors game, Memory Game.
+ *
+ * The user can exit the application by selecting the quit option.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
