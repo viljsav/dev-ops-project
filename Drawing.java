@@ -18,13 +18,13 @@ public class Drawing {
         System.out.println("Give character: ");
         char ch = scanner.nextLine().charAt(0);
 
-        drawShape(width, height);
+        drawShape(width, height, ch);
 
     }
-    public static void drawShape(int width, int height) {
+    public static void drawShape(int width, int height, char ch) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                System.out.print("x");
+                System.out.print(ch);
             }
             System.out.println();
         }
