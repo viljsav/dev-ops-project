@@ -22,6 +22,12 @@ public class Drawing {
         scanner.close();
         drawShape(width, height, ch);
     }
+    /**
+     * Method that draws a shape.
+     * @param width
+     * @param height
+     * @param ch
+     */
     public static void drawShape(int width, int height, char ch) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
