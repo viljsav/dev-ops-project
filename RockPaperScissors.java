@@ -51,6 +51,17 @@ public class RockPaperScissors {
         }
     }
 
+    /**
+     * Handles singleplayer round of the game.
+     *
+     * The user enters their choice, and the computer generates a random
+     * choice. The method validates the input, prints both choices,
+     * and displays the result of the round.
+     *
+     * @param scanner Scanner used for reading user input
+     * @param r Random instance used to generate the computer's choice
+     */
+
     private static void singlePlayer(Scanner scanner, Random r) {
         System.out.print("Enter rock, paper, or scissors: ");
         String choice = scanner.nextLine().toLowerCase();
