@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/**
+ * Simple app to draw a custom rectangle of user's chosen character.
+ */
 public class Drawing {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,10 +18,9 @@ public class Drawing {
 
         System.out.println("Give character: ");
         char ch = scanner.nextLine().charAt(0);
-        
+
         scanner.close();
         drawShape(width, height, ch);
-
     }
     public static void drawShape(int width, int height, char ch) {
         for (int i = 0; i < height; i++) {
