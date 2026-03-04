@@ -37,7 +37,7 @@ public class MemoryGame {
         while (found < pairs) {
             printBoard();
 
-            System.out.println("Select first card (enter 0 to quit):");
+            System.out.println("\nSelect first card (enter 0 to quit)");
             int[] first = select(scanner);
             if (first[0] == -1) break;
             revealed[first[0]][first[1]] = true;
