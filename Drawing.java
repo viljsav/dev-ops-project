@@ -8,9 +8,11 @@ public class Drawing {
 
         System.out.println("Give width: ");
         int width = Integer.parseInt(scanner.nextLine());
+        validateInteger(width);
 
         System.out.println("Give height: ");
         int height = Integer.parseInt(scanner.nextLine());
+        validateInteger(height);
         scanner.close();
 
         System.out.println("Give character: ");
@@ -26,5 +28,10 @@ public class Drawing {
             }
             System.out.println();
         }
-    } 
+    }
+    public static void validateInteger(int i) {
+        if (i < 0) {
+            System.err.println("Give valid width/height");
+        }
+    }
 }
