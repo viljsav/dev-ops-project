@@ -19,9 +19,9 @@ public class Drawing {
     public static void drawShape(int width, int height) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                System.out.println("x");
+                System.out.print("x");
             }
-            System.out.println("\n");
+            System.out.println();
         }
     } 
 }
