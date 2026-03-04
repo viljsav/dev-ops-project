@@ -130,6 +130,19 @@ public class RockPaperScissors {
         return false;
     }
 
+    /**
+     * Determines the result of a game round.
+     *
+     * Compares the user's choice with the opponent's choice and
+     * returns the outcome message. The message depends on
+     * whether the game is singleplayer or two-player mode.
+     *
+     * @param user the first player's choice
+     * @param opponent the opponent's choice (computer or second player)
+     * @param isSinglePlayer true if the game is single-player mode, false if two-player mode
+     * @return a String describing the outcome of the round
+     */
+
     private static String result(String user, String opponent, boolean isSinglePlayer) {
         if (user.equals(opponent)) {
             return "Draw";
