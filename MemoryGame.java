@@ -136,11 +136,11 @@ public class MemoryGame {
 
         while (!valid) {
             try {
-                System.out.print("Enter row (1-4): ");
+                System.out.print("Enter row number (1-4): ");
                 row = Integer.parseInt(scanner.nextLine()) - 1;
                 if (row == -1) return new int[]{-1, -1};
 
-                System.out.print("Enter column (1-4): ");
+                System.out.print("Enter column number (1-4): ");
                 col = Integer.parseInt(scanner.nextLine()) - 1;
                 if (col == -1) return new int[]{-1, -1};
 
