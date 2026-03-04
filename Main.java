@@ -8,9 +8,16 @@ import java.util.Scanner;
  *
  * The user can exit the application by selecting the quit option.
  */
-
 public class Main {
 
+    /**
+     * Main method that runs the application menu loop.
+     *
+     * It repeatedly asks the user to choose an option and executes the
+     * chosen functionality until the user chooses to exit.
+     *
+     * @param args Command-line arguments (not used)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
