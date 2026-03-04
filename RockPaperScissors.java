@@ -79,6 +79,16 @@ public class RockPaperScissors {
         System.out.println(gameResult);
     }
 
+    /**
+     * Handles a two-player round of the game.
+     *
+     * Both players enter their choices in console. The method
+     * validates the inputs, displays both selections, and prints
+     * the result of the round.
+     *
+     * @param scanner Scanner used for reading player inputs
+     */
+
     private static void twoPlayer(Scanner scanner) {
         System.out.print("Player 1, enter rock, paper, or scissors: ");
         String player1 = scanner.nextLine().toLowerCase();
