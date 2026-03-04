@@ -14,6 +14,15 @@ public class RockPaperScissors {
 
     private static final String[] options = {"rock", "paper", "scissors"};
 
+    /**
+     * Starts the Rock-Paper-Scissors game.
+     *
+     * Prompts the user to choose between singleplayer and two-player mode.
+     * The game continues running until the user selects the quit option.
+     *
+     * @param scanner Scanner used for reading user input from the console
+     */
+
     public static void runGame(Scanner scanner) {
         System.out.println("\nWelcome to Rock-Paper-Scissors Game!");
         Random r = new Random();
