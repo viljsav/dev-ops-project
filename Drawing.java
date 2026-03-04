@@ -6,6 +6,8 @@ public class Drawing {
 
         System.out.println("Welcome to ASCII drawing app!");
 
+        System.out.println("Give width: ");
+        int width = Integer.parseInt(scanner.nextLine());
         scanner.close();
     }    
 }
