@@ -8,6 +8,9 @@ public class Drawing {
 
         System.out.println("Give width: ");
         int width = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Give height: ");
+        int height = Integer.parseInt(scanner.nextLine());
         scanner.close();
     }    
 }
