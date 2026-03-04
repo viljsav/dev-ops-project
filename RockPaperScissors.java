@@ -1,9 +1,27 @@
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * RockPaperScissors is a simple game where players choose rock, paper, or scissors.
+ *
+ * The game can be played in singleplayer or in two-player mode.
+ * The computer's choice is randomly generated in single-player mode.
+ *
+ * The game continues until the player chooses to quit.
+ */
+
 public class RockPaperScissors {
 
     private static final String[] options = {"rock", "paper", "scissors"};
+
+    /**
+     * Starts the Rock-Paper-Scissors game.
+     *
+     * Prompts the user to choose between singleplayer and two-player mode.
+     * The game continues running until the user selects the quit option.
+     *
+     * @param scanner Scanner used for reading user input from the console
+     */
 
     public static void runGame(Scanner scanner) {
         System.out.println("\nWelcome to Rock-Paper-Scissors Game!");
@@ -33,6 +51,17 @@ public class RockPaperScissors {
         }
     }
 
+    /**
+     * Handles singleplayer round of the game.
+     *
+     * The user enters their choice, and the computer generates a random
+     * choice. The method validates the input, prints both choices,
+     * and displays the result of the round.
+     *
+     * @param scanner Scanner used for reading user input
+     * @param r Random instance used to generate the computer's choice
+     */
+
     private static void singlePlayer(Scanner scanner, Random r) {
         System.out.print("Enter rock, paper, or scissors: ");
         String choice = scanner.nextLine().toLowerCase();
@@ -49,6 +78,16 @@ public class RockPaperScissors {
         String gameResult = result(choice, computerChoice, true);
         System.out.println(gameResult);
     }
+
+    /**
+     * Handles a two-player round of the game.
+     *
+     * Both players enter their choices in console. The method
+     * validates the inputs, displays both selections, and prints
+     * the result of the round.
+     *
+     * @param scanner Scanner used for reading player inputs
+     */
 
     private static void twoPlayer(Scanner scanner) {
         System.out.print("Player 1, enter rock, paper, or scissors: ");
@@ -74,12 +113,35 @@ public class RockPaperScissors {
         System.out.println(gameResult);
     }
 
+    /**
+     * Checks if the given choice is a valid game option.
+     *
+     * Valid choice must match one of the options:
+     * "rock", "paper", or "scissors".
+     *
+     * @param choice the user input to validate
+     * @return true if the choice is valid, false otherwise
+     */
+
     private static boolean isValid(String choice) {
         for (String option : options) {
             if (option.equals(choice)) return true;
         }
         return false;
     }
+
+    /**
+     * Determines the result of a game round.
+     *
+     * Compares the user's choice with the opponent's choice and
+     * returns the outcome message. The message depends on
+     * whether the game is singleplayer or two-player mode.
+     *
+     * @param user the first player's choice
+     * @param opponent the opponent's choice (computer or second player)
+     * @param isSinglePlayer true if the game is single-player mode, false if two-player mode
+     * @return a String describing the outcome of the round
+     */
 
     private static String result(String user, String opponent, boolean isSinglePlayer) {
         if (user.equals(opponent)) {
