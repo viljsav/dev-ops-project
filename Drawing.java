@@ -26,5 +26,8 @@ public class Drawing {
             }
             System.out.println();
         }
-    } 
+    }
+    public static void validateInteger(int i) {
+        
+    }
 }
