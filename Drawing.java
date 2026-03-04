@@ -12,5 +12,11 @@ public class Drawing {
         System.out.println("Give height: ");
         int height = Integer.parseInt(scanner.nextLine());
         scanner.close();
-    }    
+
+        drawShape(width, height);
+
+    }
+    public static void drawShape(int width, int height) {
+
+    } 
 }
