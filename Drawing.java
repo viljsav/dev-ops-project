@@ -13,6 +13,9 @@ public class Drawing {
         int height = Integer.parseInt(scanner.nextLine());
         scanner.close();
 
+        System.out.println("Give character: ");
+        char ch = scanner.nextLine().charAt(0);
+
         drawShape(width, height);
 
     }
