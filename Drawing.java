@@ -30,6 +30,8 @@ public class Drawing {
         }
     }
     public static void validateInteger(int i) {
-
+        if (i < 0) {
+            System.err.println("Give valid width/height");
+        }
     }
 }
