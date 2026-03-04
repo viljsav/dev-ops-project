@@ -113,6 +113,16 @@ public class RockPaperScissors {
         System.out.println(gameResult);
     }
 
+    /**
+     * Checks if the given choice is a valid game option.
+     *
+     * Valid choice must match one of the options:
+     * "rock", "paper", or "scissors".
+     *
+     * @param choice the user input to validate
+     * @return true if the choice is valid, false otherwise
+     */
+
     private static boolean isValid(String choice) {
         for (String option : options) {
             if (option.equals(choice)) return true;
