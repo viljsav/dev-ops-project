@@ -49,6 +49,8 @@ public class Drawing {
         }
     }
     public static void draw5times(int width, int height, char ch) {
-
+        for (int i = 0; i < 5; i++) {
+            drawShape(width, height, ch);
+        }
     }
 }
