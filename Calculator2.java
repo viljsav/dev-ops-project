@@ -19,6 +19,9 @@ public class Calculator2 {
         System.out.println("How is your day?");
 
         String mood = scanner.nextLine();
+        
+        System.out.println("Number 1: ");
+
         scanner.close();
     }
 }
