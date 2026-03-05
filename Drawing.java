@@ -30,7 +30,8 @@ public class Drawing {
     public static void howIsYourDay() {
         System.out.println("How is your day?");
         String mood = scanner.nextLine();
-        
+        System.out.println("Nice to hear that your day is going: " + mood);
+
     }
     /**
      * Method that draws a shape.
