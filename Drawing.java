@@ -48,6 +48,12 @@ public class Drawing {
             System.err.println("Give valid width/height");
         }
     }
+    /**
+     * Method that calls drawing method 5 times.
+     * @param width
+     * @param height
+     * @param ch
+     */
     public static void draw5times(int width, int height, char ch) {
         for (int i = 0; i < 5; i++) {
             drawShape(width, height, ch);
