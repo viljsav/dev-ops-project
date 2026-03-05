@@ -5,6 +5,7 @@ import java.util.Scanner;
  */
 public class Drawing {
     public static void main(String[] args) {
+        howIsYourDay();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to ASCII drawing app!");
@@ -31,6 +32,7 @@ public class Drawing {
      * @param height
      * @param ch
      */
+    
     public static void drawShape(int width, int height, char ch) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
