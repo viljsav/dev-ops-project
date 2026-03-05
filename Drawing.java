@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/**
+ * Simple app to draw a custom rectangle of user's chosen character.
+ */
 public class Drawing {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -13,22 +15,31 @@ public class Drawing {
         System.out.println("Give height: ");
         int height = Integer.parseInt(scanner.nextLine());
         validateInteger(height);
-        scanner.close();
 
         System.out.println("Give character: ");
         char ch = scanner.nextLine().charAt(0);
 
-        drawShape(width, height);
-
+        scanner.close();
+        drawShape(width, height, ch);
     }
-    public static void drawShape(int width, int height) {
+    /**
+     * Method that draws a shape.
+     * @param width
+     * @param height
+     * @param ch
+     */
+    public static void drawShape(int width, int height, char ch) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                System.out.print("x");
+                System.out.print(ch);
             }
             System.out.println();
         }
     }
+    /**
+     * Method to validate width and height.
+     * @param i
+     */
     public static void validateInteger(int i) {
         if (i < 0) {
             System.err.println("Give valid width/height");
