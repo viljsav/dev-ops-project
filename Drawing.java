@@ -1,5 +1,6 @@
 import java.util.Scanner;
 /**
+ * @author Viljo Savolainen
  * Simple app to draw a custom rectangle of user's chosen character.
  */
 public class Drawing {
