@@ -32,7 +32,7 @@ public class Calculator2 {
         double times = times(m, n);
         double division = divide(m, n);
 
-        System.out.println(m + " + " + n + " = " + sum);
+        System.out.println("Sum: " + m + " + " + n + " = " + sum);
 
         scanner.close();
     }
