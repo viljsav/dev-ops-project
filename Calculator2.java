@@ -30,7 +30,6 @@ public class Calculator2 {
         times(m, n);
         divide(m, n);
 
-
         scanner.close();
     }
 }
