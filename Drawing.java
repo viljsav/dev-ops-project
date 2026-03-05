@@ -29,6 +29,8 @@ public class Drawing {
     }
     public static void howIsYourDay() {
         System.out.println("How is your day?");
+        String mood = scanner.nextLine();
+        
     }
     /**
      * Method that draws a shape.
