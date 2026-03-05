@@ -27,7 +27,8 @@ public class Calculator2 {
         int n = Integer.parseInt(scanner.nextLine());
 
         sum(m, n);
-        
+        times(m, n);
+
 
         scanner.close();
     }
