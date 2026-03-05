@@ -33,6 +33,7 @@ public class Calculator2 {
         double division = divide(m, n);
 
         System.out.println("Sum: " + m + " + " + n + " = " + sum);
+        System.out.println("Division: " + m + " / " + n + " = " + division);
 
         scanner.close();
     }
