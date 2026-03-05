@@ -22,6 +22,8 @@ public class Drawing {
 
         scanner.close();
         drawShape(width, height, ch);
+
+        draw5times(width, height, ch);
     }
     /**
      * Method that draws a shape.
@@ -45,5 +47,8 @@ public class Drawing {
         if (i < 0) {
             System.err.println("Give valid width/height");
         }
+    }
+    public static void draw5times(int width, int height, char ch) {
+
     }
 }
