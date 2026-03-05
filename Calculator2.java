@@ -29,8 +29,8 @@ public class Calculator2 {
         double n = Integer.parseInt(scanner.nextLine());
 
         double sum = sum(m, n);
-        times(m, n);
-        divide(m, n);
+        double times = times(m, n);
+        double division = divide(m, n);
 
         scanner.close();
     }
