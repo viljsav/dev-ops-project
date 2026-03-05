@@ -23,6 +23,9 @@ public class Calculator2 {
         System.out.println("Number 1: ");
         int m = Integer.parseInt(scanner.nextLine());
 
+        System.out.println("Number 2:");
+        int n = Integer.parseInt(scanner.nextLine());
+
         scanner.close();
     }
 }
