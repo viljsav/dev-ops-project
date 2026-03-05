@@ -4,9 +4,10 @@ import java.util.Scanner;
  * Simple app to draw a custom rectangle of user's chosen character.
  */
 public class Drawing {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         howIsYourDay();
-        Scanner scanner = new Scanner(System.in);
+        
 
         System.out.println("Welcome to ASCII drawing app!");
 
@@ -27,7 +28,7 @@ public class Drawing {
         draw5times(width, height, ch);
     }
     public static void howIsYourDay() {
-        
+        System.out.println("How is your day?");
     }
     /**
      * Method that draws a shape.
