@@ -26,6 +26,9 @@ public class Calculator2 {
         System.out.println("Number 2:");
         int n = Integer.parseInt(scanner.nextLine());
 
+        sum(m, n);
+        
+
         scanner.close();
     }
 }
