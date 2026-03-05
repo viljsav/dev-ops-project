@@ -26,13 +26,15 @@ public class Drawing {
 
         draw5times(width, height, ch);
     }
+    public static void howIsYourDay() {
+        
+    }
     /**
      * Method that draws a shape.
      * @param width
      * @param height
      * @param ch
      */
-    
     public static void drawShape(int width, int height, char ch) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
