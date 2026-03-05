@@ -28,7 +28,7 @@ public class Drawing {
         draw5times(width, height, ch);
     }
     public static void howIsYourDay() {
-        System.out.println("How is your day?");
+        System.out.println("How is your day going?");
         String mood = scanner.nextLine();
         System.out.println("Nice to hear that your day is going: " + mood);
 
