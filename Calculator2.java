@@ -28,6 +28,7 @@ public class Calculator2 {
 
         sum(m, n);
         times(m, n);
+        divide(m, n);
 
 
         scanner.close();
