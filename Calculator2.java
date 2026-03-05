@@ -34,6 +34,7 @@ public class Calculator2 {
 
         System.out.println("Sum: " + m + " + " + n + " = " + sum);
         System.out.println("Division: " + m + " / " + n + " = " + division);
+        System.out.println("Times: " + m + " * " + n + " = " + times);
 
         scanner.close();
     }
