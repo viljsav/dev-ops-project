@@ -14,6 +14,8 @@ public class Calculator2 {
         return m / n;
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(System.in);
+
+        scanner.close();
     }
 }
