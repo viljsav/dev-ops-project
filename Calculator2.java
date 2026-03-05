@@ -21,6 +21,7 @@ public class Calculator2 {
         String mood = scanner.nextLine();
         
         System.out.println("Number 1: ");
+        int m = Integer.parseInt(scanner.nextLine());
 
         scanner.close();
     }
