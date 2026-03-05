@@ -11,7 +11,7 @@ public class Calculator2 {
     }
     public static double divide(double m, double n) {
         if (n == 0) {
-            throw new Error();
+            throw new Error("Division by 0");
         }
         return m / n;
     }
