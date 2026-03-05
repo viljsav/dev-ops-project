@@ -23,12 +23,12 @@ public class Calculator2 {
         String mood = scanner.nextLine();
         
         System.out.println("Number 1: ");
-        int m = Integer.parseInt(scanner.nextLine());
+        double m = Integer.parseInt(scanner.nextLine());
 
         System.out.println("Number 2:");
-        int n = Integer.parseInt(scanner.nextLine());
+        double n = Integer.parseInt(scanner.nextLine());
 
-        sum(m, n);
+        double sum = sum(m, n);
         times(m, n);
         divide(m, n);
 
